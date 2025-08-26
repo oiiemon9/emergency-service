@@ -3,12 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Emergency Service</title>
   </head>
-  <body>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis natus
-    nostrum impedit quaerat officiis aspernatur accusamus adipisci cumque maxime
-    molestiae sint, cum error, blanditiis modi dignissimos? Ipsum fugiat harum
-    eaque.
+  <body class="hind-madurai-font">
+    <header>
+      <nav
+        class="max-w-[1800px] mx-auto px-5 flex items-center justify-between py-4"
+      >
+        <div class="flex items-center gap-2">
+          <div><img class="w-[50px]" src="./assets/logo.png" alt="" /></div>
+          <h4 class="font-[800] text-xl text-[#006747]">
+            Emergency <br />
+            Service
+          </h4>
+        </div>
+        <div class="flex gap-5">
+          <div
+            class="flex items-center justify-center gap-2 bg-[rgba(65,255,107,0.1)] py-2 px-5 rounded-4xl"
+          >
+            <h4 class="text-lg font-extrabold">0</h4>
+            <p><img class="w-8" src="./assets/heart.png" alt="" /></p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-2 bg-[rgba(65,255,107,0.1)] py-2 px-5 rounded-4xl"
+          >
+            <h4 class="text-lg font-black">100</h4>
+            <p><img class="w-8" src="./assets/coin.png" alt="" /></p>
+          </div>
+          <div>
+            <button
+              class="btn h-full py-2 px-5 bg-[#00A63E] text-lg text-white rounded-4xl"
+            >
+              <span>0</span> Copy
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="./js/home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8fa2ade6b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
