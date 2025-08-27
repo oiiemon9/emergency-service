@@ -35,7 +35,7 @@
           <div
             class="flex items-center justify-center gap-2 bg-[rgba(65,255,107,0.1)] py-2 px-5 rounded-4xl"
           >
-            <h4 class="text-lg font-extrabold">0</h4>
+            <h4 id="heart-count" class="text-lg font-extrabold">0</h4>
             <p><img class="w-8" src="./assets/heart.png" alt="" /></p>
           </div>
           <div
@@ -48,7 +48,7 @@
             <button
               class="btn h-full py-2 px-5 bg-[#00A63E] text-lg text-white rounded-4xl"
             >
-              <span>0</span> Copy
+              <span id="copy-count">0</span> Copy
             </button>
           </div>
         </div>
@@ -82,7 +82,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -98,7 +98,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -116,7 +116,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/police.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -130,7 +130,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -148,7 +148,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/fire-service.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -162,7 +162,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -180,7 +180,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/ambulance.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -194,7 +194,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -212,7 +212,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -226,7 +226,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -244,7 +244,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -258,7 +258,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -276,7 +276,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -290,7 +290,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -308,7 +308,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -322,7 +322,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
@@ -340,7 +340,7 @@
                   <div class="bg-[#FFE3E2] p-3.5 rounded-2xl">
                     <img class="w-8" src="./assets/emergency.png" alt="" />
                   </div>
-                  <button class="cursor-pointer h-fit">
+                  <button class="cursor-pointer h-fit heart-btn">
                     <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
                   </button>
                 </div>
@@ -356,7 +356,7 @@
                 </p>
               </div>
               <div class="mt-6 flex gap-2">
-                <button class="btn flex-1 py-2 h-fit text-gray-500">
+                <button class="btn flex-1 py-2 h-fit text-gray-500 copy-btn">
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button

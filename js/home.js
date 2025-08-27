@@ -1,10 +1,13 @@
 const callButtons = document.getElementsByClassName('call-btn');
+const copyButtons = document.getElementsByClassName('copy-btn');
+const heartButtons = document.getElementsByClassName('heart-btn');
 let callHistoryArr = [];
 
 function inerTextNum(inerTextId) {
   const text = parseInt(document.getElementById(inerTextId).innerText);
   return text;
 }
+
 // call button ok
 for (const callButton of callButtons) {
   callButton.addEventListener('click', function () {
@@ -45,9 +48,28 @@ for (const callButton of callButtons) {
     }
   });
 }
-
+// clear button ok
 document.getElementById('clear-btn').addEventListener('click', function () {
   const historySection = document.getElementById('call-history-section');
   callHistoryArr = [];
   historySection.innerText = '';
 });
+
+// copy button ok
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener('click', function () {
+    const copyInerNumber =
+      copyButton.parentNode.parentNode.children[0].children[3].innerText;
+    const copyCount = inerTextNum('copy-count');
+    navigator.clipboard.writeText(copyInerNumber);
+    alert(`The number has been copied : ${copyInerNumber}`);
+    document.getElementById('copy-count').innerText = copyCount + 1;
+  });
+}
+// heart button ok
+for (const heartButton of heartButtons) {
+  heartButton.addEventListener('click', function () {
+    const heartCount = inerTextNum('heart-count');
+    document.getElementById('heart-count').innerText = heartCount + 1;
+  });
+}
