@@ -8,7 +8,7 @@ function inerTextNum(inerTextId) {
   return text;
 }
 
-// call button ok
+// call button okk
 for (const callButton of callButtons) {
   callButton.addEventListener('click', function () {
     const coin = inerTextNum('service-coin');
