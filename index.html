@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <title>Emergency Service</title>
   </head>
   <body class="hind-madurai-font">
@@ -40,7 +41,7 @@
           <div
             class="flex items-center justify-center gap-2 bg-[rgba(65,255,107,0.1)] py-2 px-5 rounded-4xl"
           >
-            <h4 class="text-lg font-black">100</h4>
+            <h4 id="service-coin" class="text-lg font-black">100</h4>
             <p><img class="w-8" src="./assets/coin.png" alt="" /></p>
           </div>
           <div>
@@ -101,7 +102,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -133,7 +134,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -165,7 +166,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -197,7 +198,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -229,7 +230,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -261,7 +262,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -293,7 +294,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -325,7 +326,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -359,7 +360,7 @@
                   <i class="fa-solid fa-copy"></i>Copy
                 </button>
                 <button
-                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white"
+                  class="btn border-none flex-1 py-2 h-fit bg-[#00A63E] text-white call-btn"
                 >
                   <i class="fa-solid fa-phone"></i>Call
                 </button>
@@ -375,40 +376,13 @@
               <i class="fa-regular fa-clock mr-2 text-gray-500"></i>Call History
             </h4>
             <button
+              id="clear-btn"
               class="btn py-6 px-8 bg-[#00A63E] text-lg text-white rounded-4xl"
             >
               Clear
             </button>
           </div>
-          <div class="flex flex-col gap-2 mt-5">
-            <div
-              class="flex items-center gap-4 justify-between p-4 bg-gray-100 rounded-2xl"
-            >
-              <div>
-                <h4 class="text-lg font-bold">Fire Service Number</h4>
-                <p class="text-sm text-gray-500">999</p>
-              </div>
-              <p>11:36:58 AM</p>
-            </div>
-            <div
-              class="flex items-center gap-4 justify-between p-4 bg-gray-100 rounded-2xl"
-            >
-              <div>
-                <h4 class="text-lg font-bold">Fire Service Number</h4>
-                <p class="text-sm text-gray-500">999</p>
-              </div>
-              <p>11:36:58 AM</p>
-            </div>
-            <div
-              class="flex items-center gap-4 justify-between p-4 bg-gray-100 rounded-2xl"
-            >
-              <div>
-                <h4 class="text-lg font-bold">Fire Service Number</h4>
-                <p class="text-sm text-gray-500">999</p>
-              </div>
-              <p>11:36:58 AM</p>
-            </div>
-          </div>
+          <div id="call-history-section" class="flex flex-col gap-2 mt-5"></div>
         </section>
       </section>
     </main>
